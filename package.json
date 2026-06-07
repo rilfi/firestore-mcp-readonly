@@ -1,0 +1,70 @@
+{
+  "name": "firestore-mcp-readonly",
+  "version": "0.1.0",
+  "description": "Read-only Firestore MCP server for AI agents — query, explore, and dump Firestore databases via Model Context Protocol",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "firestore-mcp-readonly": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run build",
+    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest --passWithNoTests",
+    "lint": "eslint src/"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "firebase-admin": "^13.10.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^22.0.0",
+    "cross-env": "^10.1.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.3.0",
+    "typescript": "^5.7.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "firestore",
+    "firebase",
+    "google-cloud",
+    "google-cloud-firestore",
+    "gcp",
+    "database",
+    "nosql",
+    "readonly",
+    "model-context-protocol",
+    "ai-agent",
+    "ai-tools",
+    "claude",
+    "claude-mcp",
+    "cursor",
+    "ai"
+  ],
+  "author": "rilfi",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rilfi/firestore-mcp-readonly.git"
+  },
+  "homepage": "https://github.com/rilfi/firestore-mcp-readonly#readme",
+  "bugs": {
+    "url": "https://github.com/rilfi/firestore-mcp-readonly/issues"
+  },
+  "files": [
+    "dist/",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}
