@@ -125,6 +125,10 @@ All configuration is via environment variables (set in the `env` block of `.mcp.
 - **Partial results**: When limits are hit, partial data is returned with `limitReached: true` instead of erroring
 - **No secrets exposed**: `firestore_get_server_info` never returns the service account key
 
+## Contributing
+
+Contributions are welcome! Please submit your pull requests to the `develop` branch. PRs targeting any other branch will not be accepted.
+
 ## License
 
 MIT
