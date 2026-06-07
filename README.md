@@ -129,6 +129,18 @@ All configuration is via environment variables (set in the `env` block of `.mcp.
 
 Contributions are welcome! Please submit your pull requests to the `develop` branch. PRs targeting any other branch will not be accepted.
 
+### Branch Naming
+
+- Features: `feature/FSMCP-<number>-<description>`
+- Bug fixes: `bugfix/FSMCP-<number>-<description>`
+
+### Branch Flow
+
+```text
+main ← release/x.x.x ← develop ← feature/FSMCP-xxx
+                                 ← bugfix/FSMCP-xxx
+```
+
 ## License
 
 MIT

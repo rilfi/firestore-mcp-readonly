@@ -1,6 +1,6 @@
 {
   "name": "firestore-mcp-readonly",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Read-only Firestore MCP server for AI agents — query, explore, and dump Firestore databases via Model Context Protocol",
   "type": "module",
   "main": "dist/index.js",
